@@ -1,11 +1,11 @@
 let currentUser = localStorage.getItem("username");
 
 if (!currentUser) {
-  currentUser = prompt("Masukkan nama kamu:");
+  currentUser = prompt("Tau ita boot nia naran kompletu ou badak:");
   if (currentUser) {
     localStorage.setItem("username", currentUser);
   } else {
-    alert("Nama tidak boleh kosong!");
+    alert("tenki tau ita boot nia naran!");
     location.reload();
   }
 }
