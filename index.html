@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ezzo Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="profile">
+      <div class="avatar-wrapper">
+        <img id="profile-img" src="default-avatar.png" alt="Profile Picture" />
+        <label for="upload-avatar" class="camera-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24">
+            <path d="M12 5c-3.86 0-7 3.14-7 7s3.14 7 7 7a7 7 0 0 0 0-14zm0 12c-2.75 0-5-2.25-5-5s2.25-5 
+            5-5 5 2.25 5 5-2.25 5-5 5zm4.5-5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0z"/>
+          </svg>
+        </label>
+        <input type="file" id="upload-avatar" accept="image/*" hidden />
+      </div>
+      <div class="profile-info">
+        <h3 id="username"></h3>
+      </div>
+    </div>
+    <h2 class="chat-title">Ezzo Realtime Chat</h2>
+    <div id="messages"></div>
+    <form id="message-form">
+      <input type="text" id="message" placeholder="Tulis pesan..." required />
+      <button type="submit">Kirim</button>
+    </form>
+    <button onclick="logout()" class="logout">Ganti Nama</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

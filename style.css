@@ -1,0 +1,142 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  width: 420px;
+  max-width: 90vw;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chat-title {
+  text-align: center;
+  margin: 16px 0;
+  color: #333;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+#profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  transition: transform 0.2s ease;
+}
+
+#profile-img:hover {
+  transform: scale(1.05);
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #007bff;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.camera-icon:hover {
+  background: #0056b3;
+}
+
+.camera-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+#messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 12px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.message {
+  padding: 10px 14px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  max-width: 70%;
+  clear: both;
+  word-wrap: break-word;
+}
+
+.message.you {
+  background-color: #DCF8C6;
+  float: right;
+  text-align: right;
+}
+
+.message.other {
+  background-color: #f0f0f0;
+  float: left;
+  text-align: left;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+form button, .logout {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover, .logout:hover {
+  background: #0056b3;
+}
